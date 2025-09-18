@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admissions - Government Polytechnic College Khirsadoh</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Government Polytechnic College Khirsadoh (GPC)</h1>
+     <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <br>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    <br>
+    <a href="departments.html"><i class="fas fa-building"></i> Departments</a>
+    <br>
+    <a href="https://www.rgpvdiploma.in/StudentLife/StudentLogin.aspx"><i class="fas fa-users"></i> Students</a>
+    <br>
+    <a href="facilities.html"><i class="fas fa-university"></i> Facilities</a>
+    <br>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <br>
+     <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+    </nav>
+  </header>
+
+  <button id="darkModeToggle" class="dark-toggle">🌙 Toggle Dark Mode</button>
+
+
+  <img src="Images/lab3.jpg" alt="Lab1" width="490" height="320">
+  <img src="Images/lab1.jpg" alt="Lab1" width="490" height="320">
+
+  <main>
+    <a href="registration.html" class="branch-btn">Apply Now</a>
+    <h2>Admission Information:</h2>
+
+    <section class="admission-section">
+      <h3><b>Eligibility Criteria -</b></h3>
+     <h4><li>Students must have passed Class 10th.</li></h4>
+      <li>Duration - 3 Years, 6 Semesters</li>
+      <h4><li>ITI Students take admissions direct in 2<sup>nd</sup> year.</li></h4>
+      <li>Duration - 2 Years, 4 Semesters</li>
+    </section>
+
+    <section class="admission-section">
+      <h3><b>Admission Process -</b></h3>
+      <ul>
+        <li>Admissions are done based on class 10th Marks.</li>
+        <li>Merit list is published by the Directorate of Technical Education.</li>
+        <li>1<sup>st</sup> and 2 <sup>nd</sup> round of counseling and seat allotment are done online.</li>
+        <li>3<sup>rd</sup> round of counseling (CLC Round) is done in College.</li>
+        <li>Final admission is confirmed after document verification.</li>
+        <li>ITI Students take admissions direct in 2<sup>nd</sup> year by Lateral Entry.</li>
+      </ul>
+    </section>
+
+    <img src="Images/about img4.jpg" alt="Staff Member" width="470" height="320">
+  <img src="Images/lab2.jpg" alt="Lab2" width="470" height="320">
+
+    <section class="admission-section">
+      <h3><b>Important Dates (Tentative) -</b></h3>
+      <ul>
+        <h4>Round 1 of Admission</h4>
+        <pre><li>Online Registration  -                                                June 2025</li></pre>
+       <pre><li>Correction Facility  -                                                July 2025</li></pre> 
+        <pre><li>Choice Filling       -                                                July 2 to 21,2025</li></pre>
+        <pre><li>Editing Choices      -                                                July 2025</li></pre>
+        <pre><li>Release of Common Merit List -                                        July 2025</li></pre>
+        <pre><li>Print of Allotment letter and reporting at offered institute - July 2025</li></pre>
+        <br>
+        <h4>Round 2 of Admission</h4>
+        <pre><li>Online Registration  -                                                July 2025</li></pre>
+       <pre><li>Correction Facility  -                                                August 2025</li></pre> 
+        <pre><li>Choice Filling       -                                                July 2025</li></pre>
+        <pre><li>Editing Choices      -                                                August 2025</li></pre>
+        <pre><li>Release of Common Merit List -                                        August 2025</li></pre>
+        <pre><li>Availability of Allotment letter and reporting at offered institute - August 2025</li></pre>
+        <br>
+        <h4>CLC Round of Admission</h4>
+        <pre><li>Online Registration  -                                                August 2025</li></pre>
+        <pre><li>Reporting of Institutes for Admission  -                              August 2025</li></pre>
+        <pre><li>Online Registration - After CLC vacant seat                           August 2025</li></pre>
+        <pre><li>Reporting to the institues  -                                         August 2025</li></pre>
+    </ul>
+  </section>
+
+    <section class="admission-section">
+      <h3><b>Required Documents -</b></h3>
+      <ul>
+        <li>10th Marksheet</li>
+        <li>Registration Form</li>
+        <li>Domicile Certificate</li>
+        <li>Passport Size Photographs</li>
+        <li>Category Certificate (if applicable)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Save preference
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Apply saved theme on load
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    });
+</script>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Government Polytechnic College Khirsadoh</p>
+    <b><p>| Designed By Naman Jain |</p></b>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

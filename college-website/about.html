@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Government Polytechnic College Khirsadoh</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Government Polytechnic College Khirsadoh (GPC)</h1>
+     <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <br>
+    <a href="departments.html"><i class="fas fa-building"></i> Departments</a>
+    <br>
+    <a href="admission.html"><i class="fas fa-user-graduate"></i> Admission</a>
+    <br>
+    <a href="https://www.rgpvdiploma.in/StudentLife/StudentLogin.aspx"><i class="fas fa-users"></i> Students</a>
+    <br>
+    <a href="facilities.html"><i class="fas fa-university"></i> Facilities</a>
+    <br>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <br>
+     <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+    </nav>
+  </header>
+
+  <button id="darkModeToggle" class="dark-toggle">🌙 Toggle Dark Mode</button>
+
+  <main>
+    <h2>About Our Institutes:</h2>
+    <p>Government Polytechnic College Khirsadoh is dedicated to providing quality technical education and skill development to empower students for a successful future in engineering and technology.</p>
+
+    <p>Established in 1956, Government Polytechnic College Khirsadoh has a proud legacy of delivering quality technical education. With a commitment to progress, the college continues to empower generations of students with practical knowledge and industry-ready skills.</p>
+
+    <img src="Images/about img1.jpg" alt="Staff Member" width="300" height="200">
+    <img src="Images/about img2.jpg" alt="Staff Member" width="300" height="200">
+    <img src="Images/building1.jpg" alt="Building1" width="300" height="200">
+    
+
+
+    <h3><b>Our Mission-</b></h3>
+    <li>To provide quality technical education that meets industry standards and equips students with the skills needed for lifelong learning and professional success.</li>
+    <br>
+
+<li>To promote hands-on learning, critical thinking, and problem-solving abilities through well-structured academic and practical programs.</li>
+<br>
+
+<li>To collaborate with industries and other institutions for knowledge sharing, research, and skill enhancement.</li>
+<br>
+
+    <h3><b>Principal’s Message-</b></h3>
+    <p><i>We are proud to be shaping the future of thousands of students with dedication and innovation. Welcome to a journey of learning and excellence.</i></p>
+
+    <p><i>At GPC Khirsadoh, we believe education is not just about earning a diploma, but about building character, confidence, and a commitment to lifelong learning. I invite you to explore our campus, engage with our vibrant academic community, and be a part of our continuing journey toward excellence.</i><p>
+
+      <img src="Images/staff.jpg" alt="Staff Member" width="300">
+
+– Mr. Hari Das Patil Principal,
+Government Polytechnic College Khirsadoh
+
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Save preference
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Apply saved theme on load
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    });
+</script>
+  
+  <footer class="site-footer">
+    <p>&copy; 2025 Government Polytechnic College Khirsadoh</p>
+    <b><p>| Designed By Naman Jain |</p></b>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

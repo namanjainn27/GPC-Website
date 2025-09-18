@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facilities - GPC Khirsadoh</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS -->
+    <!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Government Polytechnic College Khirsadoh (GPC)</h1>
+         <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <br>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    <br>
+    <a href="departments.html"><i class="fas fa-building"></i> Departments</a>
+    <br>
+    <a href="admission.html"><i class="fas fa-user-graduate"></i> Admission</a>
+    <br>
+    <a href="https://www.rgpvdiploma.in/StudentLife/StudentLogin.aspx"><i class="fas fa-users"></i> Students</a>
+    <br>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <br>
+     <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+    </nav>
+    </header>
+
+    <button id="darkModeToggle" class="dark-toggle">🌙 Toggle Dark Mode</button>
+
+    <main>
+        <section class="facility-section">
+            <h2>Our Campus Facilities:</h2>
+
+            <div class="facility-box">
+                <h3><b>Library -</b></h3>
+                <li>Well-stocked library with books, journals, and digital resources for all departments.</li>
+                <li>Students have access to subject-specific books, newspapers, magazines, and e-resources to support their learning.</li>
+                <li>Our college library is a well-equipped knowledge center, offering a wide collection of textbooks, reference books, journals, and digital resources.</li>
+            </div>
+
+            <div class="facility-box">
+                <h3><b>Computer Labs -</b></h3>
+                <li>Modern labs with high-speed internet and updated software for practical learning.</li>
+                <li>Students receive hands-on training in programming, web development, database management, and various IT applications.</li>
+                <li>The labs are connected with high-speed internet and network facilities, enabling smooth access to online learning resources and tools.</li>
+                <br>
+                <img src="Images/lab4.jpg" alt="Lab1" width="355" height="280">
+                <img src="Images/lab3.jpg" alt="Lab1" width="355" height="280">
+            </div>
+
+            <div class="facility-box">
+                <h3><b>Workshops -</b></h3>
+                <li>It provides students with real-world experience in fitting, welding, carpentry, machining, and other core engineering skills.</li>
+                <li>The workshop helps bridge the gap between theoretical knowledge and practical application through guided practice and live demonstrations.</li>
+                <li>Dedicated mechanical, electrical, and civil engineering workshops for hands-on training.Safety measures and proper supervision are ensured to maintain a secure and effective learning environment.</li>
+                <br>
+                <img src="Images/lab1.jpg" alt="Lab1" width="355" height="200">
+                <img src="Images/machinelab1.jpg" alt="Machine Lab" width="355" height="200">
+                <img src="Images/machinelab2.jpg" alt="Machine Lab" width="355" height="200">
+                <img src="Images/machinelab3.jpg" alt="Machine Lab" width="355" height="200">
+            </div>
+
+            <div class="facility-box">
+                <h3><b>Sports Ground -</b></h3>
+                <li>Playgrounds and indoor games facilities for physical and recreational activities.</li>
+                <li>The college sports ground provides ample space and facilities for outdoor games such as cricket, football, volleyball, and athletics.</li>
+                <li>We believe in the overall development of students, and sports play a key role in promoting physical fitness, teamwork, and discipline.</li>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    const toggleBtn = document.getElementById("darkModeToggle");
+    toggleBtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        // Save preference
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+
+    // Apply saved theme on load
+    window.addEventListener("load", () => {
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    });
+</script>
+
+    <footer class="site-footer">
+    <p>&copy; 2025 Government Polytechnic College Khirsadoh</p>
+    <b><p>| Designed By Naman Jain |</p></b>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>

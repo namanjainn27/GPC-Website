@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration | GPC Khirsadoh</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <h1>Government Polytechnic College Khirsadoh</h1>
+        <nav>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <br>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+    <br>
+    <a href="departments.html"><i class="fas fa-building"></i> Departments</a>
+    <br>
+    <a href="admission.html"><i class="fas fa-user-graduate"></i> Admission</a>
+    <br>
+    <a href="https://www.rgpvdiploma.in/StudentLife/StudentLogin.aspx"><i class="fas fa-users"></i> Students</a>
+    <br>
+    <a href="facilities.html"><i class="fas fa-university"></i> Facilities</a>
+    <br>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    <br>
+     <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+    </nav>
+    </header>
+
+  <h2 style="text-align: center;">Student Registration Form:</h2>
+
+  <div style="display: flex; justify-content: center;">
+       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7Gj8aLOJwzs4dHlCJpSgiuDdvAigRu3tC7eKivVU1q4xymw/viewform?usp=pp_url" width="640" height="1642" frameborder="0" marginheight="0" marginwidth="0">
+    </iframe>
+  </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+    <p>&copy; 2025 Government Polytechnic College Khirsadoh</p>
+    <b><p>| Designed By Naman Jain |</p></b>
+
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+</footer>
+
+    <!-- Back to Top Button -->
+    <button onclick="scrollToTop()" id="backToTop" title="Go to top">↑</button>
+
+    <!-- JavaScript -->
+    <script>
+        function validateForm() {
+            const phone = document.forms["regForm"]["phone"].value;
+            if (phone.length !== 10) {
+                alert("Phone number must be 10 digits.");
+                return false;
+            }
+            return true;
+        }
+
+        window.onscroll = function () {
+            let btn = document.getElementById("backToTop");
+            btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>

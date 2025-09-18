@@ -1,0 +1,865 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #003366;
+  color:aliceblue;
+  padding: 15px;
+  text-align: center;
+}
+
+.welcome-heading {
+  color:aqua;
+}
+
+nav {
+  display: flex;
+  gap: 20px; /* space between links */
+  justify-content: center; /* center the links */
+  background-color:firebrick; /* optional background */
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color:aqua;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: hwb(56 0% 0%); /* change color on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  background-color: lab(94.72% -0.33 -0.13);
+  padding: 30px;
+  text-align: center;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.admission-section {
+  background-color: hwb(200 65% 11%);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border: 1px solid lch(3.32% 0 296.81);
+  border-radius: 8px;
+}
+
+.admission-section h3 {
+  color: lch(50% 97.1 39.1);
+}
+
+.admission-section ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color: #003366;
+  color: #faf8f8;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Department cards */
+.department {
+  background-color: lab(68.02% -29.86 -20.13);
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #0408c91a;
+}
+
+.department h3 {
+  color: hsl(258, 89%, 33%);
+  margin-top: 0;
+}
+
+.department p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.branch-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.branch-btn {
+  background-color: hwb(24 3% 9%);
+  color: hsl(123, 98%, 51%);
+  padding: 10px 20px;
+  border: 2px solid #003366;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.branch-btn:hover {
+  background-color: hwb(189 5% 9%);
+  color: hsl(29, 93%, 46%);
+}
+
+/* Style for section headings like About, Departments, Admission */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: rgb(231, 86, 2);
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid hwb(241 1% 66%);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: hsl(113, 91%, 41%);
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.cse-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cse-container h2 {
+  text-align: center;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.cse-container p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.branch-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  color: lab(41.39% 65.06 52.07);
+  font-weight: bold;
+  background-color: hsl(59, 86%, 45%);
+  transition: 0.3s;
+}
+
+.branch-btn:hover {
+  background-color: #ddd;
+}
+
+.admission-form {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+}
+
+.admission-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.admission-form input,
+.admission-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #888;
+}
+
+.admission-form button {
+  margin-top: 20px;
+}
+
+input[type="file"] {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+#successMessage {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.branch-btn {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: white;
+  border: 2px solid #444;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.branch-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.facility-section {
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+
+.facility-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.facility-box {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    border-left: 5px solid #3498db;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.contact-info, .contact-form, .map-section {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: hwb(30 93% 6%);
+    color: hsl(54, 97%, 46%);
+    border: 1px solid #444;
+}
+
+.dark-mode .contact-info,
+.dark-mode .contact-form,
+.dark-mode .map-section {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-toggle:hover {
+    background-color: #2980b9;
+}
+
+/* Base Theme (Light Mode) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Theme */
+.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.dark-mode .contact-info,
+.dark-mode .contact-form,
+.dark-mode .map-section,
+.dark-mode .facility-box,
+.dark-mode .department-box {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+/* Toggle Button */
+.dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.dark-toggle:hover {
+    background-color: #2980b9;
+}
+
+.site-footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.site-footer {
+    background-color: #003366;
+    color: #f1f1f1;
+}
+
+.social-icons a {
+    color: lab(96.29% 0.51 -0.37);
+}
+
+.social-icons a:hover {
+    color: hsl(123, 70%, 53%);
+}
+
+/* Dark mode support */
+.dark-mode .site-footer {
+    background-color: #003366;
+    color: #f1f1f1;
+}
+
+.dark-mode .social-icons a {
+    color: oklab(93.066% 0.00357 -0.00461);
+}
+
+.dark-mode .social-icons a:hover {
+    color: hsl(108, 70%, 53%);
+}
+
+/* Back to Top Button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+  background-color: #2980b9;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.registration-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.registration-form form label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.registration-form form input,
+.registration-form form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.registration-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.registration-form button:hover {
+    background-color: #2980b9;
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.main-image img {
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* style the sidebar container */
+.sidebar {
+  width: 220px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* style each sidebar item */
+.sidebar-item {
+  display: block;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-left: 5px solid orange; /* color strip on the left */
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+/* icon inside sidebar item */
+.sidebar-item i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* hover effect */
+.sidebar-item:hover {
+  background-color: #e6f0ff;
+  color: #003366;
+  transform: translateX(5px);
+}
+
+/* optional different colors per item, like in the image */
+.sidebar-link.register { background-color:#12eb0a;}
+.sidebar-link.admissionportal { background-color:burlywood; }
+.sidebar-link.registration { background-color:plum; }
+.sidebar-link.syllabus  { background-color:#05f1e6; }
+.sidebar-link.result { background-color:hwb(16 22% 3%); }
+.sidebar-link.download { background-color:palegreen; }
+.sidebar-link.whatsapp-button{background-color:gold;}
+
+.collapsible {
+  background-color: #004080;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.collapsible:hover {
+  background-color: #003060;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f9ff;
+  padding: 10px 15px;
+  border-left: 3px solid #004080;
+  border-radius: 0 0 5px 5px;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content li {
+  margin: 8px 0;
+}
+
+.content a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.collapsible i {
+  margin-right: 8px;
+}
+
+.content li i {
+  color: #c0392b;
+  margin-right: 6px;
+}
+
+#notice-board {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-left: 6px solid #003366;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.notice-box {
+  max-height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.notice-list {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0;
+  animation: scroll-up 10s linear infinite;
+}
+
+.notice-list li {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.notice-list li .new {
+  background: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+@keyframes scroll-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
+}
+
+.download-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.download-box {
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-left: 5px solid #007bff;
+  border-radius: 6px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.download-box i {
+  color: #dc3545;
+  font-size: 20px;
+}
+
+.download-box a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.download-box a:hover {
+  color: #007bff;
+}
+
+.main-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 60%;
+  max-width: 600px;
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 8px;
+  height: 270px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slider-container button.prev,
+.slider-container button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #222;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.slider-container button.prev:hover,
+.slider-container button.next:hover {
+  opacity: 1;
+}
+
+.slider-container button.prev {
+  left: 0;
+}
+
+.slider-container button.next {
+  right: 0;
+}
+
+.sidebar {
+  width: 30%;
+  margin-left: 20px;
+}
+
+.sidebar h3 {
+  font-size: 1.2em;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #eee;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: #ddd;
+}
+
+/* ===================== */
+/* Responsive CSS Design */
+/* ===================== */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 15px;
+}
+
+/* Navbar */
+.navbar {
+  background: #003366;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background: #0059b3;
+  border-radius: 5px;
+}
+
+/* Important Links Section */
+.important-section {
+  padding: 15px;
+  margin: 15px auto;
+  max-width: 1000px;
+}
+
+.important-title {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.important-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.important-links a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  min-width: 150px;
+  transition: 0.3s;
+}
+
+.register { background-color:#05f1e6;}
+.download { background-color: #6a5acd; }
+.result { background-color: #20b2aa; }
+.syllabus { background-color: #f44336; }
+.registration { background-color: #00bfa5; }
+.admission { background-color: #bcaaa4; }
+.💬ChatWithUs {background-color: darkgoldenrod;}
+
+.important-links a:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
